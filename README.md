@@ -1,9 +1,32 @@
 # FP_TECSUPBOT
 
+> Crear Entorno virtual
+
+```bash
 python -m venv env .  
+```
 
-.\env\scripts\activate
+> Activar Entorno Virtual
 
+```bash
+.\env\scripts\activate 
+```
+
+> instalar dependecias (Esperar, toma su tiempo)
+
+```bash
 pip install -r .\requirements.txt
--- Esperar
+```
+
+> iniciar entrenamiento
+
+```bash
+python .\training.py
+```
+
+> iniciar bot
+
+```bash
+ python .\chatbot.py
+```
 
