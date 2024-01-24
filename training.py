@@ -7,11 +7,11 @@ import tensorflow as tf
 import nltk
 from nltk.stem import WordNetLemmatizer #Para pasar las palabras a su forma raíz
 
-from keras.preprocessing.sequence import pad_sequences
-#Para crear la red neuronal
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from keras.optimizers import Adam
+# from keras.preprocessing.sequence import pad_sequences
+# #Para crear la red neuronal
+# from keras.models import Sequential
+# from keras.layers import Dense, Dropout
+# from keras.optimizers import Adam
 
 
 lemmatizer = WordNetLemmatizer()
