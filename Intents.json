@@ -1,0 +1,38 @@
+{"intents": [
+    {
+        "tag": "saludo",
+        "patterns": ["hola", "buenos dias", "buenas tardes", "buenas noches", "¿cómo estás?", "saludos", "hola, ¿en qué puedo ayudarte?"],
+        "responses": ["¡Hola! ¿En qué podemos ayudarte hoy?"]
+    },
+    {
+        "tag": "notas",
+        "patterns": ["calificaciones", "notas", "seva", "puntaje", "ver mis notas"],
+        "responses": ["Para consultar tus calificaciones, accede al SEVA usando este enlace: https://app.tecsup.edu.pe/SGA/logeoEvaluacion.html. Recuerda usar tu código de alumno y la contraseña de 4 dígitos."]
+    },
+    {
+        "tag": "asistencia",
+        "patterns": ["asistencias", "faltas", "inasistencias"],
+        "responses": ["Puedes revisar tus asistencias aquí: https://app.tecsup.edu.pe/SGA/logeoEvaluacion.html"]
+    },
+    {
+        "tag": "canvas",
+        "patterns": ["entrar a canvas", "aula virtual", "canvas", "clases", "grabaciones"],
+        "responses": ["Estimado alumno, puedes acceder a tu aula virtual en Canvas a través de este enlace: https://tecsup.instructure.com/. Recuerda usar tu correo de Tecsup para iniciar sesión."]
+    },
+    {
+        "tag": "horario",
+        "patterns": ["a qué horas abren", "cuál es su horario", "desde qué horas está abierto"],
+        "responses": ["Nuestro horario de atención es de 8 am a 6 pm todos los días."]
+    },
+    {
+        "tag": "pagos",
+        "patterns": ["se puede pagar con tarjeta", "mastercard", "efectivo", "visa"],
+        "responses": ["Aceptamos pagos en efectivo y con todas las tarjetas, incluyendo MasterCard y Visa."]
+    },
+    {
+        "tag": "no_reconocido",
+        "patterns": ["*"],
+        "responses": ["Lo siento, no comprendo esa consulta. ¿Puedes reformularla o preguntar de otra manera?"]
+    }
+    ]
+}
