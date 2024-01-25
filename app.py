@@ -3,7 +3,7 @@ from chatbot import predict_class,get_response
 import json
 
 def apprender():
-    intents = json.loads(open('intents.json',encoding='utf-8').read())
+    intents = json.loads(open('./Intents.json',encoding='utf-8').read())
 
     app = Flask(__name__)
 
