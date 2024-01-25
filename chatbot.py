@@ -9,6 +9,11 @@ from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 
+# Descargar recursos de NLTK
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
 #Importamos los archivos generados en el código anterior
 intents = json.loads(open('./Intents.json',encoding='utf-8').read())
 
