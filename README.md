@@ -21,12 +21,5 @@ pip install -r .\requirements.txt
 > iniciar entrenamiento
 
 ```bash
-python .\training.py
+python app.py
 ```
-
-> iniciar bot
-
-```bash
- python .\chatbot.py
-```
-
