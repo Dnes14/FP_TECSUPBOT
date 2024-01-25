@@ -2,5 +2,4 @@
 nltk==3.8.1
 numpy==1.26.3
 keras==2.15.0
-Flask==3.0.1
-whitenoise
+Flask==2.2.2
