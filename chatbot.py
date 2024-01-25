@@ -59,9 +59,9 @@ def get_response(intents_list, intents_json):
 print("GO! TECSUPBot is running!")
 
 #Ejecutamos el chat en bucle
-while True:
-    message=input(">:")
-    ints = predict_class(message)
-    res = get_response(ints, intents)
-    print(res)
-    print("")
+# while True:
+#     message=input(">:")
+#     ints = predict_class(message)
+#     res = get_response(ints, intents)
+#     print(res)
+#     print("")
