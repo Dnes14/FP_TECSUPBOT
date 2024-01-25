@@ -3,16 +3,10 @@ import json
 import pickle
 import numpy as np
 import tensorflow as tf
-
 import nltk
 from nltk.stem import WordNetLemmatizer #Para pasar las palabras a su forma raíz
 
-# from keras.preprocessing.sequence import pad_sequences
-# #Para crear la red neuronal
-# from keras.models import Sequential
-# from keras.layers import Dense, Dropout
-# from keras.optimizers import Adam
-
+# Ingreso
 
 lemmatizer = WordNetLemmatizer()
 
@@ -30,6 +24,9 @@ words = []
 classes = []
 documents = []
 ignore_letters = ['?', '!', '¿', '.', ',']
+
+
+#Proceso
 
 #Clasifica los patrones y las categorías
 for intent in intents['intents']:
@@ -90,4 +87,7 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 hist = model.fit(np.array(trainX), np.array(trainY), epochs=200, batch_size=5, verbose=1)
 model.save('chatbot_model.h5', hist)
+
+#salida
+
 print('Done')

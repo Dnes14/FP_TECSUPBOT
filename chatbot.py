@@ -7,19 +7,22 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
+# Ingreso
+
 lemmatizer = WordNetLemmatizer()
 
-# Descargar recursos de NLTK
+# Descargar recursos de NLTK (Necesario si no se cargo el training)
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 #Importamos los archivos generados en el código anterior
 intents = json.loads(open('./Intents.json',encoding='utf-8').read())
-
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.h5')
+
+#Proceso
 
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
@@ -61,12 +64,7 @@ def get_response(intents_list, intents_json):
             break
     return result
 
+# Salida 
+
 print("GO! TECSUPBot is running!")
 
-#Ejecutamos el chat en bucle
-# while True:
-#     message=input(">:")
-#     ints = predict_class(message)
-#     res = get_response(ints, intents)
-#     print(res)
-#     print("")
